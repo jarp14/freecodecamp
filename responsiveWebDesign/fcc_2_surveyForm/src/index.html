@@ -1,0 +1,65 @@
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+  <div id="form-box">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">In this survey we want to know your soccer and other sports preferences</p>
+    <form id="survey-form">
+      <div class="row">
+        <div class="labels"><label id="name-label" for="name"><strong><font color="red">*</font> Name:</strong></label></div>
+        <div class="inputs"><input autofocus type="text" id="name" class="input-field" placeholder="Enter your name" required></input></div>
+      </div>
+      <div class="row">
+        <div class="labels"><label id="email-label" for="email"><strong><font color="red">*</font> E-mail:</strong></label></div>
+        <div class="inputs"><input autofocus type="email" id="email" class="input-field" placeholder="Enter your e-mail" required></input></div>
+      </div>
+      <div class="row">
+        <div class="labels"><label id="number-label" for="age"><strong><font color="red">*</font> Age:</label></strong></div>
+        <div class="inputs"><input autofocus type="number" id="number" class="input-field" placeholder="Enter your age" min="1" max="130" required></input></div>
+      </div>
+      <div class="row">
+        <div class="labels"><label id="radio-label"><strong>Gender:</strong></label></div>
+        <div class="inputs">
+          <input name="gender" type="radio" value="male"> Male <br></input>
+          <input name="gender" type="radio" value="female"> Female </input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels"><label id="picker-label"><strong>Which is your favourite soccer team?</strong></label></div>
+        <div class="inputs">
+          <select id="dropdown" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option value="atleti">Atletico Madrid</option>
+            <option value="madrid">Real Madrid</option>
+            <option value="paris">Paris Saint Germain</option>
+            <option value="juve">Juventus</option>
+            <option value="barca">Barça</option>
+            <option value="manu">Manchester United</option>
+            <option value="oporto">Oporto</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels"><label id="checkbox-label"><strong>Which sports do you like?</strong></label></div>
+        <div class="inputs">
+          <input type="checkbox" name="sport1" value="soccer"> Soccer<br>
+          <input type="checkbox" name="sport2" value="basketball"> Basketball<br>
+          <input type="checkbox" name="sport3" value="tennis"> Tennis<br>
+          <input type="checkbox" name="sport4" value="boxing"> Boxing<br>
+          <input type="checkbox" name="sport5" value="other"> Other</input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels"><label id="text-label"><strong>Enter additional information to know you better:</strong></label></div>
+        <div class="inputs">
+          <textarea></textarea>
+        </div>
+      </div>
+      <div class="button-holder"><button id="submit" type="submit">Submit</button></div>
+    </form>
+  </div>
+  <footer>@yarp14 · freecodecamp · project #2</footer>
+</body>

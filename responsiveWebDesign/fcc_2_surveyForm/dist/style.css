@@ -1,0 +1,166 @@
+html, body {
+  background-color: #96D4AC;
+  color: #333;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1, p {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+}
+h1 {
+  font-size: 2vw;
+}
+p {
+  font-size: 1vw;
+}
+
+#form-box {
+  background-color: #F5F5F5;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  width: 40%;
+  height: 80%;
+}
+
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 5px;
+}
+.labels {
+  padding: 5px;
+  font-size: 1vw;
+}
+.inputs {
+  padding: 5px;
+  font-size: 1vw;
+}
+
+.input-field {
+  padding: 10px;
+  width: 10vw;
+  border: none;
+  border: solid 1px #CCC;
+  border-radius: 4px;
+  font-size: 0.7vw;
+}
+
+#dropdown {
+  font-size: 0.85vw;
+}
+
+textarea {
+  width: 20vw;
+  height: 10vh;
+}
+
+.button-holder {
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0px 20px 0px;
+}
+#submit {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1vw;
+  letter-spacing: 2px;
+  position: relative;
+  background-color: #16A085;
+  border: none;
+  color: #FFF;
+  padding: 6px;
+  width: 6vw;
+  min-width: 40px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+#submit:hover {
+  background: #FFF;
+  box-shadow: 0px 2px 10px 5px #1ABC9C;
+  color: #333;
+}
+#submit:after {
+  content: "";
+  background: #1ABC9C;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+#submit:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+#submit:focus { outline: 0; }
+
+footer {
+  text-align: center;
+  margin: 30px 0 20px 0;
+  font-size: 0.9vw;
+}
+
+@media only screen and (max-height: 499px) {
+  h1 {
+    font-size: 6vw;
+  }
+  p {
+    font-size: 4vw;
+  }
+  
+  #form-box {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .labels {
+    font-size: 4vw;
+  }
+  .inputs {
+    font-size: 4vw;
+  }
+  
+  .input-field {
+    padding: 15px;
+    width: 30vw;
+    font-size: 3vw;
+  }
+
+  #dropdown {
+    font-size: 3vw;
+  }
+
+  textarea {
+    width: 40vw;
+    height: 30vh;
+  }
+  
+  .button-holder {
+    margin: 20px 0px 40px 0px;
+  }
+  #submit {
+    font-size: 4vw;
+    padding: 6px;
+    width: 30vw;
+    min-width: 40px;
+  }
+
+  footer {
+    font-size: 2vw;
+  }
+}
